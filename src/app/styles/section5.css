@@ -1,0 +1,150 @@
+.section5 {
+    background-image: radial-gradient(circle at 50% 70%, rgba(255, 157, 0, 0.263), transparent 40%),
+                radial-gradient(circle at 0 0, rgba(173, 59, 255, 0.305), transparent 40%),
+                radial-gradient(circle at 100% 40%, rgba(59, 150, 255, 0.423), transparent 40%);
+    background-color: #eee;
+    background-attachment: fixed;
+    gap: 30px;
+    padding: 20px;
+}
+.glassMorphism {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff77;
+    border: solid 0.5px #ffffffaa;
+    border-top: solid 1px #ffffff;
+}
+.section5 > h1 {
+    text-align: center;
+}
+.sec5Lock {
+    filter: brightness(90%);
+    width: fit-content;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.sec5HeaderText {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 0.5px #00000055;
+    border-bottom: solid 0.5px #00000055;
+    padding: 20px;
+}
+.section5 > form {
+    position: relative;
+    gap: 10px;
+    border: solid 0.5px #00000055;
+    padding: 20px;
+    transition: opacity 0.7s, transform 0.7s;
+}
+.sec5FormCloseButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+.section5 > form > div > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.section5 > form > div > div > p {
+    width: 80%;
+}
+.section5 > form > div > div > input {
+    width: 20%;
+    text-align: center;
+}
+.section5 > form input, .section5 > form textarea, .section5 > form > button {
+    width: 100%;
+    border: solid 0.5px #00000033;
+}
+.sec5ColumnsWrapper {
+    max-height: 400px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-image: url('/images/lines.png');
+    background-attachment: fixed;
+    background-size: 100% 50%;
+    background-color: #ffffff;
+    padding: 0;
+}
+.sec5Column {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #eeeeeecc;
+}
+.sec5Comment {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background: #e4e4e49d;
+    border: solid 0.5px #ffffff;
+    border-top: solid 1px #ffffff;
+    border-radius: 10px;
+}
+.sec5Comment > h1 {
+    cursor: no-drop;
+}
+.sec5CommentPart1 {
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #555555;
+    color: #fff;
+    border-radius: 50%;
+}
+.sec5CommentPart2 {
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+}
+.sec5CommentPart2 > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #005db4;
+}
+.hidden5Form {
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+}
+.showsed5Form {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/* Laptop scale */
+@media (min-width: 1024px) {
+    .sec5ColumnsWrapper {
+        max-height: 300px;
+    }
+    .sec5Column {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .sec5Comment {
+        width: calc(100%/2 - 10px/2);
+    }
+    .section5 > form {
+        width: 40%;
+        margin: 0 auto;
+    }
+    .section5 > form > h3 {
+        cursor: pointer;
+    }
+    .sec5SubbmitButton {
+        width: fit-content;
+        padding: 20px 50px;
+        margin: 0 auto;
+    }
+}

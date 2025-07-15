@@ -1,0 +1,111 @@
+.pricePageWrapper > div {
+    background-color: #eeeeeecc;
+    padding: 30px;
+}
+.pricePageWrapper h1 {
+    font-family: var(--formalFont);
+}
+.pricePageDetailsWrapper {
+    gap: 30px;
+}
+.pricePageDetailsWrapper > p {
+    font-family: var(--formalFont);
+}
+.pricePageDetailsWrapper span {
+    font-weight: bold;
+    color: rgb(45, 134, 202);
+}
+
+.pricePageList {
+    gap: 30px;
+}
+.pricePageCard {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 20px;
+    border-top: solid 1px #fff;
+    box-shadow: 0 1px 5px #00000055;
+    background-color: #eeeeeecc;
+    padding: 20px;
+}
+.pricePageCard:nth-of-type(odd) {
+    border-right: solid 10px rgb(45, 134, 202);
+}
+.pricePageCard:nth-of-type(even) {
+    border-right: solid 10px rgb(192, 135, 44);
+}
+.pricePageCard > div:nth-child(1) {
+    gap: 5px;
+}
+.pricePageCard:nth-of-type(odd) > div:nth-child(1) > h2 {
+    color: rgb(45, 134, 202);
+    font-family: var(--formalFont);
+}
+.pricePageCard:nth-of-type(even) > div:nth-child(1) > h2 {
+    color: rgb(151, 101, 20);
+    font-family: var(--formalFont);
+}
+.pricePageCard h1 {
+    white-space: nowrap;
+}
+.pricePageCard p {
+    font-family: var(--formalFont);
+}
+
+/* Settings */
+.pricePageAddPriceButton {
+    font-size: 45px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    user-select: none;
+    transition: 0.2s linear 0.4s;
+}
+.pricePageSettingsMenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.pricePageSettingsMenuOn {
+    max-height: 200px;
+}
+.pricePageSettingsMenu input {
+    border: solid 0.5px #00000055;
+}
+.pricePageCardSettings {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.pricePageCardSettings > h1 {
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Laptop scale */
+@media (min-width: 1024px) {
+    .pricePageWrapper > div {
+        padding: 30px 100px;
+    }
+    .pricePageDetailsWrapper {
+        gap: 50px;
+        margin-bottom: 30px;
+    }
+    .pricePageCard > div:nth-child(1) {
+        gap: 15px;
+    }
+    .pricePageSettingsMenu {
+        width: 50%;
+        margin-left: auto;
+    }
+}

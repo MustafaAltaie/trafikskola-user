@@ -1,0 +1,186 @@
+.section3 {
+    padding-top: 50px;
+}
+.section3 > h1 {
+    background-color: #0079e39f;
+    color: #fff;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    text-align: center;
+}
+.section3 > div {
+    background-image: url("/images/car1.webp");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: #ddd;
+}
+.sec3CardWrapper {
+    background-color: #eeeeeedd;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    border-bottom: solid 0.5px #00000055;
+}
+.sec3Card {
+    position: relative;
+    align-items: flex-start;
+    background: #ffffff77;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 20px 20px 0 0;
+    border: solid 0.5px #00000055;
+}
+.sec3Card * {
+    font-family: var(--formalFont);
+}
+.sec3CardPrice {
+    font-weight: bold;
+    color: #158acd;
+}
+.sec3Card > h3 {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #5bb3ff9f;
+    border-radius: 20px 20px 0 0;
+}
+.sec3Card > i {
+    position: absolute;
+    transform: translate(-30%, 30%) rotate(-45deg);
+    background: #2e9837;
+    padding: 3px 20px 7px 20px;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%, 10% 50%);
+}
+.sec3CardInnerWrapper {
+    align-items: flex-start;
+    width: 100%;
+}
+.sec3CardInnerWrapper > div {
+    width: 100%;
+    align-items: center;
+    padding: 10px 0;
+}
+.sec3CardInnerWrapper > ul {
+    width: 100%;
+    list-style: none;
+}
+.sec3CardInnerWrapper > ul > li {
+    padding: 10px;
+    border-top: var(--thinDarkBorder);
+}
+.sec3CardInnerWrapper > ul > li:nth-of-type(odd) {
+    background: #eeeeee;
+}
+
+/* Settings */
+.addEducationButton {
+    background-color: #eeeeeedd;
+    font-family: var(--formalFont);
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 0 20px 0;
+}
+.addEducationForm {
+    background-color: #eeeeeedd;
+    padding: 0 30px;
+    gap: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.addEducationFormOpened {
+    padding-bottom: 30px;
+}
+.addEducationForm input, .addEducationForm textarea, .addEducationForm button {
+    padding: 10px;
+    border: solid 0.5px #00000077;
+    border-radius: 10px;
+    width: 100%;
+}
+.addEducationForm > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.addEducationForm ul {
+    list-style: none;
+    gap: 10px;
+}
+.addEducationForm ul > li {
+    background: #ffffff99;
+    padding: 10px;
+    border-radius: 10px;
+    border: dashed 0.7px #000;
+    cursor: no-drop;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.sec3SettingsOption {
+    width: 100%;
+}
+.sec3NewSettingsOption {
+    width: 0;
+}
+.sec3SettingsThisOption {
+    transform: scale(1.15);
+}
+.sec3SettingsDeletedOption {
+    width: 0;
+}
+.addEducationForm button {
+    background: #a2ddff;
+}
+
+.sec3SettingsCardHeader {
+    position: absolute;
+    right: 0;
+    transform: translateY(-75%);
+    display: flex;
+    gap: 10px;
+}
+.sec3SettingsCardHeader > p {
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* Laptop scale */
+@media (min-width: 1024px) {
+    .section3  > div {
+        background-size: 70% 100%;
+        background-repeat: no-repeat;
+    }
+    .sec3CardWrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 40px;
+    }
+    .sec3Card {
+        width: calc(100%/3 - 80px/3);
+    }
+    .sec3CardInnerWrapper > div {
+        padding: 10px;
+    }
+    .sec3CardInnerWrapper > ul > li {
+        padding: 10px;
+    }
+    .addEducationForm {
+        align-items: center;
+    }
+    .addEducationForm input, .addEducationForm textarea, .addEducationForm button {
+        width: 50%;
+    }
+    .addEducationForm > div {
+        width: 50%;
+    }
+    .addEducationForm ul {
+        width: 50%;
+    }
+}

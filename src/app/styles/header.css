@@ -1,0 +1,110 @@
+header {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    color: var(--textDark);
+}
+header > div{
+    background-color: var(--bgDark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+.logoWrapper {
+    height: 50px;
+    user-select: none;
+    cursor: pointer;
+}
+.logoWrapper > img {
+    height: 100%;
+    pointer-events: none;
+}
+.navToggleButton {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+}
+.navToggleButton > div {
+    width: 100%;
+    height: 3px;
+    background: var(--textDark);
+    transition: 0.2s;
+}
+header > nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+.navOpened {
+    max-height: 700px;
+}
+.navClosed {
+    max-height: 0;
+}
+header > nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    background-image: url('/images/lines.png');
+    background-size: 100% 50%;
+    background-color: #333;
+    border-bottom: solid 0.5px #ffffff4b;
+}
+header > nav > ul > li {
+    width: 100%;
+    text-align: center;
+    border-top: solid 0.5px #ffffff4b;
+    background: #000000aa;
+    font-size: 20px;
+    user-select: none;
+}
+header > nav > ul > li > a {
+    color: var(--textDark);
+    padding: 20px;
+    display: block;
+    width: 100%;
+    
+}
+.active {
+    background: rgba(0, 100, 182, 0.567);
+}
+
+/* Laptop scale */
+@media (min-width: 1024px) {
+    .navToggleButton {
+        display: none;
+    }
+    .navClosed {
+        max-height: unset;
+    }
+    header {
+        display: flex;
+        border-bottom: solid 0.5px #ffffff4b;
+    }
+    header > div{
+        padding: 0 20px;
+        white-space: nowrap;
+    }
+    header > nav > ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        background: var(--bgDark);
+        border-bottom: none;
+    }
+    header > nav > ul > li {
+        width: fit-content;
+        font-size: 16px;
+        transition: 0.1s;
+    }
+    header > nav > ul > li:hover {
+        padding: 18px 20px 22px 20px;
+    }
+}

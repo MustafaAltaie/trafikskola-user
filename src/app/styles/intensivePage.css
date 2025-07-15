@@ -1,0 +1,106 @@
+.intensivePageWrapper > div {
+    position: relative;
+    background: #ffffffdd;
+    gap: 10px;
+    padding: 30px;
+}
+.intensivePageWrapper h3 {
+    font-family: var(--formalFont);
+}
+.intensivePageWrapper h2 {
+    display: flex;
+    align-items: center;
+    font-family: var(--formalFont);
+}
+.intensivePageWrapper h2 > img {
+    height: 50px;
+    pointer-events: none;
+}
+.intensivePageWrapper hr {
+    border: solid 0.5px #00000033;
+    margin-top: 10px;
+}
+.intensivePageWrapper button {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: solid 0.7px #00000044;
+    background: var(--bgBToP);
+    color: #fff;
+}
+.intensivePageEducationWrapper {
+    padding-top: 20px;
+    gap: 30px;
+}
+.intensivePageEducationWrapper > div {
+    border: solid 0.7px #00000077;
+}
+
+/* Settings */
+.intensivePageSettingsButton {
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    cursor: pointer;
+    font-family: var(--formalFont);
+    font-size: 40px;
+    padding-bottom: 10px;
+    user-select: none;
+    transition: 0.2s;
+}
+.intensivePageSettings {
+    position: relative;
+    overflow: hidden;
+    padding: 0 30px;
+    margin: 20px 0;
+    transition: 0.4s ease-in-out;
+}
+.intensivePageSettings > div > button {
+    background: #07a;
+}
+.intensivePageSettings > ul {
+    list-style: none;
+}
+.intensivePageSettings > ul > li {
+    background: #eee;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border: dashed 0.7px #00000077;
+    border-radius: 5px;
+    transition: transform 0.2s, width 0.4s;
+}
+.intensivePageSettings > ul > li > b {
+    cursor: pointer;
+}
+
+/* Laptop scale */
+@media (min-width: 1024px) {
+    .intensivePageWrapper > div {
+        padding: 30px 100px;
+        gap: 30px;
+    }
+    .intensivePageWrapper button {
+        border: none;
+        width: 40%;
+        margin: 10px auto 0 auto;
+    }
+    .intensivePageEducationWrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .intensivePageEducationWrapper > div {
+        width: calc(100%/2 - 25px);
+    }
+    .intensivePageSettings {
+        width: 50%;
+        margin: 20px auto;
+        gap: 20px;
+    }
+    .intensivePageSettings > ul, .intensivePageSettings > div {
+        gap: 20px;
+    }
+}

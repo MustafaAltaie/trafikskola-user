@@ -1,0 +1,28 @@
+.integrityWrapper, .termsWrapper {
+    padding: 100px 30px 30px;
+}
+.integrityWrapper *, .termsWrapper * {
+    font-family: var(--formalFont);
+    line-height: 2rem;
+    font-family: sans-serif;
+}
+.integrityWrapper h1, .termsWrapper h1 {
+    margin-bottom: 20px;
+    color: #07a;
+    font-weight: bold;
+}
+
+/* Settings */
+.integrityTermsSettingsWrapper {
+    margin: 10px auto;
+}
+.integrityTermsSettingsWrapper textarea {
+    min-height: 200px;
+    padding: 10px;
+}
+
+@media (min-width: 1024px) {
+    .integrityTermsSettingsWrapper {
+        width: 50%;
+    } 
+}
