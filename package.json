@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.0.2",
     "@reduxjs/toolkit": "^2.8.2",
+    "@vonage/server-sdk": "^3.22.1",
     "framer-motion": "^12.23.5",
     "mongoose": "^8.16.3",
     "next": "15.4.1",
