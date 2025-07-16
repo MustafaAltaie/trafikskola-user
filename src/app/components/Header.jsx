@@ -22,9 +22,9 @@ const Header = () => {
     return (
         <header>
             <div>
-                <div className='logoWrapper'>
+                <a href='/' className='logoWrapper'>
                     <img src="/images/logo1.png" alt="Katrineholm" />
-                </div>
+                </a>
                 <div className='navToggleButton' onClick={() => setToggleBtn(!toggleBtn)}>
                     <div style={{ transform: `translateY(${toggleBtn ? '400%' : '0'}) rotate(${ toggleBtn ? '45' : '0' }deg)` }}></div>
                     <div style={{ opacity: toggleBtn ? '0' : '1' }}></div>
