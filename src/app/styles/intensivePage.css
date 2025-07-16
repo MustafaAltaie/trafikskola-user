@@ -79,7 +79,7 @@
 /* Laptop scale */
 @media (min-width: 1024px) {
     .intensivePageWrapper > div {
-        padding: 30px 100px;
+        padding: 30px 200px;
         gap: 30px;
     }
     .intensivePageWrapper button {

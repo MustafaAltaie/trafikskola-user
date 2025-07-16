@@ -52,7 +52,7 @@
 /* Laptop scale */
 @media (min-width: 1024px) {
     .aboutPageWrapper > div {
-        padding: 30px 100px;
+        padding: 30px 200px;
     }
     .aboutPageImageWrapper > div {
         height: 400px;

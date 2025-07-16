@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
 
                     <div className="footerAbout">
-                        <p><span>Katrineholm-Eskilstuna Trafikskola</span> ligger i nära Eskilstuna centrum 9 minuter buss linje 1 vid Busshållplats Munktellsgan och nära Trafikverket förarprov 10 minuter med foten.Vår målsättning är att erbjuda en lugn och trivsam studiemiljö med modern utrustning.</p>
+                        <p><span>Katrineholm-Eskilstuna Trafikskola</span> ligger i katrineholm Vingåkersvägen 63 64151, och i Eskilstuna nära Eskilstuna centrum 9 minuter buss linje 1 vid Busshållplats Munktellsgan och nära Trafikverket förarprov 10 minuter med foten.Vår målsättning är att erbjuda en lugn och trivsam studiemiljö med modern utrustning.</p>
                         <a href='/om-oss'><p><span style={{ color: '#57d', fontWeight: 'bold' }}>Läs mer om oss ...</span></p></a>
                     </div>
 

@@ -95,7 +95,7 @@
 /* Laptop scale */
 @media (min-width: 1024px) {
     .pricePageWrapper > div {
-        padding: 30px 100px;
+        padding: 30px 200px;
     }
     .pricePageDetailsWrapper {
         gap: 50px;

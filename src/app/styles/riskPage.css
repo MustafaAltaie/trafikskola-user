@@ -46,7 +46,7 @@
 /* Laptop scale */
 @media (min-width: 1024px) {
     .riskPageWrapper > div {
-        padding: 30px 100px;
+        padding: 30px 200px;
         gap: 30px;
     }
     .riskImageWrapper > img {

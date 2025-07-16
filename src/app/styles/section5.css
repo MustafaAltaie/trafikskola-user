@@ -126,6 +126,12 @@
 @media (min-width: 1024px) {
     .sec5ColumnsWrapper {
         max-height: 300px;
+        width: 700px;
+        margin: 0 auto;
+    }
+    .sec5HeaderText {
+        width: 700px;
+        margin: 0 auto;
     }
     .sec5Column {
         display: flex;

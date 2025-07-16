@@ -152,7 +152,7 @@
 
 /* Laptop scale */
 @media (min-width: 1024px) {
-    .section3  > div {
+    .section3 > div {
         background-size: 70% 100%;
         background-repeat: no-repeat;
     }
@@ -160,7 +160,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 40px;
-        padding: 40px;
+        padding: 40px 100px;
     }
     .sec3Card {
         width: calc(100%/3 - 80px/3);
